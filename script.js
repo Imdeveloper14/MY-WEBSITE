@@ -1,13 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Loading Screen Logic
     const loader = document.getElementById('loader');
-    
-    // Simulate loading time for the 3D wireframe effect to be seen
-    setTimeout(() => {
-        loader.classList.add('hidden');
-        // Trigger initial animations after loader hides
-        setTimeout(initScrollAnimations, 500);
-    }, 1500);
+    const MIN_LOADER_TIME = 5000;
+
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            if (loader) {
+                loader.classList.add('fade-out');
+                
+                // Trigger initial scroll animations as the loader starts fading out
+                setTimeout(initScrollAnimations, 300);
+
+                setTimeout(() => {
+                    loader.remove();
+                }, 800);
+            } else {
+                initScrollAnimations();
+            }
+        }, MIN_LOADER_TIME);
+    });
 
     // 2. Dynamic Year in Footer
     document.getElementById('year').textContent = new Date().getFullYear();

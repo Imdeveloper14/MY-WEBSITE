@@ -21,18 +21,41 @@
     <!-- Loading Screen -->
     <div id="loader" class="loader-wrapper">
         <div class="loader-content">
-            <div class="loader-logo-wrapper">
-                <img src="images/logo.png" alt="CK Engineering Solutions Logo" class="loader-logo-img">
-            </div>
-            <div class="wireframe-cube">
-                <div class="face front"></div>
-                <div class="face back"></div>
-                <div class="face right"></div>
-                <div class="face left"></div>
-                <div class="face top"></div>
-                <div class="face bottom"></div>
-            </div>
-            <p class="loader-text">INITIALIZING CAD ENVIRONMENT</p>
+            <img
+                src="images/logo.png"
+                alt="CK Engineering Solutions"
+                class="loader-logo"
+            />
+            <svg class="cad-blueprint" viewBox="0 0 200 200">
+                <!-- Axis Grid Lines (Construction) -->
+                <line x1="10" y1="100" x2="190" y2="100" class="blueprint-line axis-line" />
+                <line x1="100" y1="10" x2="100" y2="190" class="blueprint-line axis-line" />
+                
+                <!-- Outer circle -->
+                <circle cx="100" cy="100" r="60" class="blueprint-circle main-circle" />
+                
+                <!-- Inner circle -->
+                <circle cx="100" cy="100" r="35" class="blueprint-circle main-circle" />
+                
+                <!-- Diagonal layout lines -->
+                <path d="M 60,60 L 140,140 M 60,140 L 140,60" class="blueprint-line diagonal-line" />
+                
+                <!-- Structural outer polygon bracket -->
+                <polygon points="50,50 150,50 170,100 150,150 50,150 30,100" class="blueprint-polygon main-poly" />
+                
+                <!-- Construction dashed outer circle -->
+                <circle cx="100" cy="100" r="75" class="blueprint-circle construction-circle" />
+                
+                <!-- Dimension lines -->
+                <path d="M 100,25 L 175,25" class="blueprint-line dim-line" />
+                <path d="M 175,22 L 175,28" class="blueprint-line dim-line" />
+                <path d="M 100,22 L 100,28" class="blueprint-line dim-line" />
+                <text x="125" y="18" class="blueprint-text">R 75.0</text>
+                
+                <path d="M 170,90 L 170,100 L 160,100" class="blueprint-line angle-indicator" />
+                <text x="175" y="95" class="blueprint-text">90°</text>
+            </svg>
+            <p class="loader-text">PREPARING ENGINEERING WORKSPACE<span class="loading-dots"></span></p>
         </div>
     </div>
 
@@ -137,8 +160,7 @@
                     
                     <!-- Right Side: Expertise Cards -->
                     <div class="about-expertise-v2 animate-on-scroll">
-                        <span class="section-eyebrow text-accent">Expertise</span>
-                        <h2 class="about-title">Core Capabilities</h2>
+                        <h2 class="expertise-heading">Expertise</h2>
                         <div class="expertise-stack">
                             
                             <!-- Card 1 -->
