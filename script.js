@@ -32,8 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
     navItems.forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
-            const icon = mobileMenuToggle.querySelector('i');
-            if (icon) icon.classList.replace('ph-x', 'ph-list');
+            if (mobileMenuToggle) {
+                const icon = mobileMenuToggle.querySelector('i');
+                if (icon) icon.classList.replace('ph-x', 'ph-list');
+            }
         });
     });
 
