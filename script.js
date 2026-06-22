@@ -39,14 +39,37 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 4. Navbar Scroll Effect
+    // 4. Navbar Scroll Effect & Auto-Hide Sticky navbar
     const navbar = document.getElementById('navbar');
+    let lastScrollTop = 0;
+
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // 1. Add background transparency class when scrolled past 50px
+        if (scrollTop > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
+
+        // 2. Hide/Show navbar based on scroll direction
+        const isMobileMenuOpen = navLinks && navLinks.classList.contains('active');
+
+        if (!isMobileMenuOpen) {
+            if (scrollTop <= 0) {
+                // At the very top, always show navbar
+                navbar.classList.remove('navbar-hidden');
+            } else if (scrollTop > lastScrollTop && scrollTop > 80) {
+                // Scrolling down past navbar height -> hide it
+                navbar.classList.add('navbar-hidden');
+            } else if (scrollTop < lastScrollTop) {
+                // Scrolling up -> show it
+                navbar.classList.remove('navbar-hidden');
+            }
+        }
+
+        lastScrollTop = scrollTop;
     });
 
     // 5. Scroll Animations (Intersection Observer)

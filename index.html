@@ -69,9 +69,6 @@
             
             <div class="container hero-container">
                 <div class="hero-content animate-on-scroll">
-                    <div class="hero-logo-box">
-                        <img src="images/logo.png" alt="CK Engineering Solutions Logo" class="hero-logo-img">
-                    </div>
                     <div class="hero-badge">Freelance Engineering Design Consultancy</div>
                     <h1 class="hero-title">
                         <span class="hero-word word-1">Engineering</span>
@@ -601,36 +598,22 @@
                                 </div>
                             </div>
                             
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="phone">Phone</label>
-                                    <input type="tel" id="phone" name="Phone" required placeholder="+91 8072294717">
-                                </div>
-                                <div class="form-group">
-                                    <label for="projectType">Project Type</label>
-                                    <select id="projectType" name="Project_Type" required>
-                                        <option value="" disabled selected>Select...</option>
-                                        <option value="drone">Drone / UAV Design</option>
-                                        <option value="mechanical">Mechanical Assembly</option>
-                                        <option value="product">Consumer Product</option>
-                                        <option value="rendering">3D Rendering</option>
-                                    </select>
-                                </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="Phone" required placeholder="+91 8072294717">
                             </div>
-
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="budget">Budget Range</label>
-                                    <select id="budget" name="Budget" required>
-                                        <option value="" disabled selected>Select...</option>
-                                        <option value="small">&lt; $1,000</option>
-                                        <option value="medium">$1,000 - $5,000</option>
-                                        <option value="large">$5,000+</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <!-- Empty space or can expand budget to full width, let's keep budget and project type on same row? Actually, added Phone, so Phone + Project Type is one row, Budget + something else? Let's make Budget full width. -->
-                                </div>
+                            
+                            <div class="form-group">
+                                <label for="projectType">Project Type</label>
+                                <select id="projectType" name="Project_Type" required>
+                                    <option value="" disabled selected>Select...</option>
+                                    <option value="mechanical-3d-modelling">Mechanical 3D Modelling</option>
+                                    <option value="marine-structure-design">Marine Structure Design</option>
+                                    <option value="marine-piping-design">Marine Piping Design</option>
+                                    <option value="civil-piping-design">Civil Piping Design</option>
+                                    <option value="civil-structure-modelling">Civil Structure Modelling</option>
+                                    <option value="barge-loadout-calculations">Barge Loadout Calculations</option>
+                                </select>
                             </div>
                             
                             <div class="form-group">
@@ -735,12 +718,12 @@
                             <label>Project Type</label>
                             <select required>
                                 <option value="" disabled selected>Select...</option>
-                                <option value="product">Product Design</option>
-                                <option value="cad">CAD Modeling</option>
-                                <option value="drone">Drone/UAV Design</option>
-                                <option value="mechanical">Mechanical Design</option>
-                                <option value="rendering">3D Rendering</option>
-                                <option value="other">Other</option>
+                                <option value="mechanical-3d-modelling">Mechanical 3D Modelling</option>
+                                <option value="marine-structure-design">Marine Structure Design</option>
+                                <option value="marine-piping-design">Marine Piping Design</option>
+                                <option value="civil-piping-design">Civil Piping Design</option>
+                                <option value="civil-structure-modelling">Civil Structure Modelling</option>
+                                <option value="barge-loadout-calculations">Barge Loadout Calculations</option>
                             </select>
                         </div>
                     </div>
@@ -753,15 +736,6 @@
                             <label>Preferred Time</label>
                             <input type="time" required>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Project Budget</label>
-                        <select required>
-                            <option value="" disabled selected>Select budget range...</option>
-                            <option value="small">&lt; $1,000</option>
-                            <option value="medium">$1,000 - $5,000</option>
-                            <option value="large">$5,000+</option>
-                        </select>
                     </div>
                     <div class="form-group">
                         <label>Project Description</label>
