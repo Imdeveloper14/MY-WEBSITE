@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional 3D CAD Designer, Pipe Designer, and Marine Systems Design Specialist. Transforming ideas into precision models.">
+    <title>3D CAD, Pipe & Marine Design Specialist</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <div class="wireframe-cube">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+            <p class="loader-text">INITIALIZING CAD ENVIRONMENT</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">CK</span> CAD FREELANCING SOLUTIONS
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                <i class="ph ph-list"></i>
+            </button>
+            <nav id="nav-links" class="nav-links">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#workflow" class="nav-link">Workflow</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg-grid"></div>
+            <div class="hero-particles" id="particles"></div>
+            
+            <div class="container hero-container">
+                <div class="hero-content animate-on-scroll">
+                    <div class="hero-badge">Freelance Marine Designer & CAD Specialist</div>
+                    <h1 class="hero-title">
+                        <span class="hero-word word-1">Engineering</span>
+                        <span class="hero-word word-2">Ideas into</span>
+                        <span class="hero-word word-3 text-gradient-red">Reality.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Professional CAD Design, 3D Modeling, Technical Drafting, and Engineering Solutions for Marine, Civil, and Industrial Projects.
+                    </p>
+                    <p class="hero-description">
+                        Helping businesses, consultants, contractors, and manufacturers transform concepts into accurate, production-ready design solutions through precision CAD services and technical expertise.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Request Quote <i class="ph ph-arrow-right"></i></a>
+                        <button type="button" class="btn btn-outline" id="consultBtnHero">Schedule Consultation</button>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>SCROLL</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="about-grid-v2">
+                    
+                    <!-- Left Side: Profile Summary & Stats -->
+                    <div class="about-profile animate-on-scroll">
+                        <span class="section-eyebrow text-accent">About</span>
+                        <h2 class="about-title">About <span class="text-gradient-red">CK CAD Freelancing Solutions</span></h2>
+                        <p class="about-subtitle">Delivering production-ready design solutions for marine, industrial, and manufacturing environments.</p>
+                        
+                        <div class="about-summary-box">
+                            <p class="about-summary-text">
+                                CK CAD Freelancing Solutions provides professional freelance CAD design and engineering support services for marine, civil, industrial, and manufacturing projects. With expertise in 3D modeling, AutoCAD Plant 3D, piping systems, technical drafting, production drawings, and design documentation, every project is delivered with accuracy, efficiency, and attention to detail.
+                            </p>
+                        </div>
+                        
+                        <div class="stats-grid-v2">
+                            <div class="stat-card-v2">
+                                <div class="stat-icon-wrapper"><i class="ph ph-calendar"></i></div>
+                                <span class="stat-num-v2" data-target="3.5">0</span><span class="stat-plus">+</span>
+                                <span class="stat-label-v2">Years Experience</span>
+                            </div>
+                            <div class="stat-card-v2">
+                                <div class="stat-icon-wrapper"><i class="ph ph-folder-open"></i></div>
+                                <span class="stat-num-v2" data-target="15">0</span><span class="stat-plus">+</span>
+                                <span class="stat-label-v2">Projects Delivered</span>
+                            </div>
+                            <div class="stat-card-v2">
+                                <div class="stat-icon-wrapper"><i class="ph ph-cpu"></i></div>
+                                <span class="stat-num-v2-text">Plant 3D</span>
+                                <span class="stat-label-v2">AutoCAD Plant 3D Specialist</span>
+                            </div>
+                            <div class="stat-card-v2">
+                                <div class="stat-icon-wrapper"><i class="ph ph-anchor"></i></div>
+                                <span class="stat-num-v2-text">Marine</span>
+                                <span class="stat-label-v2">Marine & Industrial Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Side: Expertise Cards -->
+                    <div class="about-expertise-v2 animate-on-scroll">
+                        <span class="section-eyebrow text-accent">Expertise</span>
+                        <h2 class="about-title">Core Capabilities</h2>
+                        <div class="expertise-stack">
+                            
+                            <!-- Card 1 -->
+                            <div class="expertise-card-v2">
+                                <div class="expertise-icon-v2">
+                                    <i class="ph ph-compass"></i>
+                                </div>
+                                <div class="expertise-info-v2">
+                                    <h4>Naval Architecture & Ship Stability</h4>
+                                    <p>Vessel design support, stability assessments, and class-approval ready documentation for builders and owners.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 2 -->
+                            <div class="expertise-card-v2">
+                                <div class="expertise-icon-v2">
+                                    <i class="ph ph-cube"></i>
+                                </div>
+                                <div class="expertise-info-v2">
+                                    <h4>3D Modeling & Advanced CAD</h4>
+                                    <p>Delivering precise, production-ready 3D CAD models optimized for fabrication and manufacturing.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 3 -->
+                            <div class="expertise-card-v2">
+                                <div class="expertise-icon-v2">
+                                    <i class="ph ph-flow-arrow"></i>
+                                </div>
+                                <div class="expertise-info-v2">
+                                    <h4>Piping & Production Design</h4>
+                                    <p>Custom routing, general arrangement layouts, accurate isometric spool drawings, and complete BOM lists using AutoCAD Plant 3D.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 4 -->
+                            <div class="expertise-card-v2">
+                                <div class="expertise-icon-v2">
+                                    <i class="ph ph-drop"></i>
+                                </div>
+                                <div class="expertise-info-v2">
+                                    <h4>Specialized Marine Retrofits (BWTS)</h4>
+                                    <p>End-to-end BWTS retrofit design, including structural integration, pipe routing, and on-site alignment scans.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 5 -->
+                            <div class="expertise-card-v2">
+                                <div class="expertise-icon-v2">
+                                    <i class="ph ph-printer"></i>
+                                </div>
+                                <div class="expertise-info-v2">
+                                    <h4>3D Printable Models</h4>
+                                    <p>Optimizing 3D models specifically for additive manufacturing, prototyping, and rapid product development.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section bg-darker">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Technical Expertise</h2>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category animate-on-scroll delay-1">
+                        <h3><i class="ph ph-cpu"></i> Software Stack</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Rhino 3D</span>
+                            <span class="skill-tag">Grasshopper</span>
+                            <span class="skill-tag">AutoCAD Plant 3D</span>
+                            <span class="skill-tag">ShipConstructor</span>
+                            <span class="skill-tag">Navisworks</span>
+                            <span class="skill-tag">AutoCAD</span>
+                            <span class="skill-tag">Maxsurf</span>
+                            <span class="skill-tag">GHS</span>
+                            <span class="skill-tag">Auto-Hydro</span>
+                            <span class="skill-tag">Ansys Aqwa</span>
+                            <span class="skill-tag">AutoCAD ReCap Pro</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category animate-on-scroll delay-2">
+                        <h3><i class="ph ph-pen-nib"></i> Core Services</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">3D CAD Modeling</span>
+                            <span class="skill-tag">Technical Drafting</span>
+                            <span class="skill-tag">AutoCAD Plant 3D</span>
+                            <span class="skill-tag">Pipe Design & Routing</span>
+                            <span class="skill-tag">Marine System Design</span>
+                            <span class="skill-tag">Ship Stability Support</span>
+                            <span class="skill-tag">Civil Drafting</span>
+                            <span class="skill-tag">Industrial Design Solutions</span>
+                            <span class="skill-tag">3D Printable Models</span>
+                            <span class="skill-tag">Production Drawings</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Gallery Section -->
+        <section id="portfolio" class="portfolio section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Selected Projects</h2>
+                    <p class="section-desc">Advanced concepts designed for performance and manufacturability.</p>
+                </div>
+                
+                <div class="masonry-grid">
+                    <!-- Project 1 -->
+                    <div class="masonry-item animate-on-scroll">
+                        <div class="project-card" data-img="images/drone1.png" data-title="New Build Q3 Barge" data-desc="Executed intact and probabilistic damage stability calculations, structural designs, and full midship 3D models.">
+                            <div class="project-img-wrapper">
+                                <img src="images/drone1.png" alt="Barge Design" loading="lazy">
+                                <div class="project-overlay">
+                                    <i class="ph ph-magnifying-glass-plus"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>New Build Q3 Barge</h3>
+                                <div class="project-meta">
+                                    <span class="tag">Naval Architecture</span>
+                                    <span class="tag">Stability</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="masonry-item animate-on-scroll">
+                        <div class="project-card" data-img="images/drone2.png" data-title="27ft Speed Boat" data-desc="Designed a hydrodynamically streamlined 3D hull for a 27ft speed boat using Rhino 3D for MKEL Projects.">
+                            <div class="project-img-wrapper">
+                                <img src="images/drone2.png" alt="Speed Boat" loading="lazy">
+                                <div class="project-overlay">
+                                    <i class="ph ph-magnifying-glass-plus"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>27ft Speed Boat</h3>
+                                <div class="project-meta">
+                                    <span class="tag">Hydrodynamics</span>
+                                    <span class="tag">Rhino 3D</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="masonry-item animate-on-scroll">
+                        <div class="project-card" data-img="images/pill.png" data-title="VM Maritime Piping" data-desc="Delivered high-accuracy pipe routing, piping general arrangements, isometric drawings, and spool drawings.">
+                            <div class="project-img-wrapper">
+                                <img src="images/pill.png" alt="Piping Layout" loading="lazy">
+                                <div class="project-overlay">
+                                    <i class="ph ph-magnifying-glass-plus"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Marine Piping Systems</h3>
+                                <div class="project-meta">
+                                    <span class="tag">Pipe Routing</span>
+                                    <span class="tag">Isometrics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="masonry-item animate-on-scroll">
+                        <div class="project-card" data-img="images/valve.png" data-title="Indian Navy RIB" data-desc="Maintained structural and system integrity through critical console modifications and 3D reverse engineering.">
+                            <div class="project-img-wrapper">
+                                <img src="images/valve.png" alt="Navy RIB" loading="lazy">
+                                <div class="project-overlay">
+                                    <i class="ph ph-magnifying-glass-plus"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Indian Navy RIB</h3>
+                                <div class="project-meta">
+                                    <span class="tag">Structural</span>
+                                    <span class="tag">Reverse Engineering</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="masonry-item animate-on-scroll">
+                        <div class="project-card" data-img="images/structure.png" data-title="BWTS Retrofits" data-desc="Led 3D modeling and structural integration for major Ballast Water Treatment System retrofits.">
+                            <div class="project-img-wrapper">
+                                <img src="images/structure.png" alt="BWTS Retrofit" loading="lazy">
+                                <div class="project-overlay">
+                                    <i class="ph ph-magnifying-glass-plus"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>BWTS Retrofits</h3>
+                                <div class="project-meta">
+                                    <span class="tag">Retrofit</span>
+                                    <span class="tag">Point Cloud</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Project -->
+        <section class="featured-project section bg-darker">
+            <div class="container">
+                <div class="featured-wrapper animate-on-scroll">
+                    <div class="featured-img-box">
+                        <img src="images/drone1.png" alt="UAV Hero" class="featured-img">
+                        <div class="glass-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Weight</span>
+                                <span class="spec-val">1.2 kg</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Material</span>
+                                <span class="spec-val">Carbon Fiber</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <span class="section-eyebrow text-accent">Featured Case Study</span>
+                        <h2 class="featured-title">UAV Development Concept</h2>
+                        <p class="featured-desc">A deep dive into the design process of a high-performance, modular UAV system built for challenging environments.</p>
+                        
+                        <div class="challenge-box">
+                            <h4><i class="ph ph-warning-circle text-accent"></i> Design Challenge</h4>
+                            <p>Optimizing thrust-to-weight ratio while maintaining structural rigidity for payload mounting.</p>
+                        </div>
+                        
+                        <a href="#" class="btn btn-outline mt-4">View Full Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workflow Section -->
+        <section id="workflow" class="workflow section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">My Design Workflow</h2>
+                    <p class="section-desc" style="color: var(--color-text-muted); margin-top: 0.5rem;">A structured process from concept to final production-ready delivery.</p>
+                </div>
+                
+                <div class="workflow-grid">
+                    <div class="workflow-card animate-on-scroll delay-1">
+                        <div class="workflow-card-content">
+                            <div class="workflow-card-header">
+                                <span class="step-badge">01</span>
+                                <i class="ph ph-magnifying-glass workflow-icon"></i>
+                            </div>
+                            <h4>Requirement Study</h4>
+                            <p>Understanding client needs, technical specifications, design standards, and project scope.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="workflow-card animate-on-scroll delay-2">
+                        <div class="workflow-card-content">
+                            <div class="workflow-card-header">
+                                <span class="step-badge">02</span>
+                                <i class="ph ph-lightbulb workflow-icon"></i>
+                            </div>
+                            <h4>Concept Development</h4>
+                            <p>Creating initial design ideas, layouts, sketches, and system planning.</p>
+                        </div>
+                    </div>
+
+                    <div class="workflow-card animate-on-scroll delay-3">
+                        <div class="workflow-card-content">
+                            <div class="workflow-card-header">
+                                <span class="step-badge">03</span>
+                                <i class="ph ph-cube workflow-icon"></i>
+                            </div>
+                            <h4>CAD Modeling</h4>
+                            <p>Building accurate 3D models, piping layouts, mechanical parts, and assemblies.</p>
+                        </div>
+                    </div>
+
+                    <div class="workflow-card animate-on-scroll delay-1">
+                        <div class="workflow-card-content">
+                            <div class="workflow-card-header">
+                                <span class="step-badge">04</span>
+                                <i class="ph ph-wrench workflow-icon"></i>
+                            </div>
+                            <h4>Design Review</h4>
+                            <p>Checking design feasibility, routing, clearances, manufacturability, and system requirements.</p>
+                        </div>
+                    </div>
+
+                    <div class="workflow-card animate-on-scroll delay-2">
+                        <div class="workflow-card-content">
+                            <div class="workflow-card-header">
+                                <span class="step-badge">05</span>
+                                <i class="ph ph-aperture workflow-icon"></i>
+                            </div>
+                            <h4>Rendering & Visualization</h4>
+                            <p>Creating clean visual presentations, technical views, and model previews.</p>
+                        </div>
+                    </div>
+
+                    <div class="workflow-card animate-on-scroll delay-3">
+                        <div class="workflow-card-content">
+                            <div class="workflow-card-header">
+                                <span class="step-badge">06</span>
+                                <i class="ph ph-check-circle workflow-icon"></i>
+                            </div>
+                            <h4>Final Delivery</h4>
+                            <p>Providing final CAD files, drawings, layouts, isometrics, and design documentation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials section bg-darker">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Client Feedback</h2>
+                </div>
+                
+                <div class="testimonial-grid">
+                    <div class="testimonial-card animate-on-scroll delay-1">
+                        <i class="ph-fill ph-quotes text-accent quote-icon"></i>
+                        <p>"Excellent modeling accuracy and attention to detail."</p>
+                        <div class="author">- Aerospace Client</div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll delay-2">
+                        <i class="ph-fill ph-quotes text-accent quote-icon"></i>
+                        <p>"Delivered highly manufacturable CAD designs on time."</p>
+                        <div class="author">- Manufacturing Lead</div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll delay-3">
+                        <i class="ph-fill ph-quotes text-accent quote-icon"></i>
+                        <p>"Outstanding visualization and technical design understanding."</p>
+                        <div class="author">- Product Developer</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info animate-on-scroll">
+                        <h2 class="section-title">Start a Project</h2>
+                        <p class="section-desc">Ready to partner with <strong>CK CAD Freelancing Solutions</strong>? Fill out the form to request a quote or schedule a design consultation.</p>
+                        
+                        <div class="contact-methods mt-4">
+                            <a href="mailto:chandrunavalarch@gmail.com" class="contact-method">
+                                <div class="icon-box"><i class="ph ph-envelope"></i></div>
+                                <div>
+                                    <span>Email</span>
+                                    <strong>chandrunavalarch@gmail.com</strong>
+                                </div>
+                            </a>
+                            <a href="tel:+918072294717" class="contact-method mt-4">
+                                <div class="icon-box"><i class="ph ph-phone"></i></div>
+                                <div>
+                                    <span>Phone</span>
+                                    <strong>+91 8072294717</strong>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper animate-on-scroll delay-2">
+                        <form id="contactForm" class="contact-form" action="https://formspree.io/f/xykqyzna" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="Name" required placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="Email" required placeholder="john@company.com">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" id="phone" name="Phone" required placeholder="+91 8072294717">
+                                </div>
+                                <div class="form-group">
+                                    <label for="projectType">Project Type</label>
+                                    <select id="projectType" name="Project_Type" required>
+                                        <option value="" disabled selected>Select...</option>
+                                        <option value="drone">Drone / UAV Design</option>
+                                        <option value="mechanical">Mechanical Assembly</option>
+                                        <option value="product">Consumer Product</option>
+                                        <option value="rendering">3D Rendering</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="budget">Budget Range</label>
+                                    <select id="budget" name="Budget" required>
+                                        <option value="" disabled selected>Select...</option>
+                                        <option value="small">&lt; $1,000</option>
+                                        <option value="medium">$1,000 - $5,000</option>
+                                        <option value="large">$5,000+</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <!-- Empty space or can expand budget to full width, let's keep budget and project type on same row? Actually, added Phone, so Phone + Project Type is one row, Budget + something else? Let's make Budget full width. -->
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="Message" rows="4" required placeholder="Describe your project requirements..."></textarea>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary" id="quoteSubmitBtn">Request Quote</button>
+                                <button type="button" class="btn btn-outline" id="consultBtn">Schedule Consultation</button>
+                            </div>
+                        </form>
+
+                        <div id="quoteSuccess" class="success-message hidden" style="background: var(--color-bg-alt); padding: 2rem; border-radius: 8px; border: 1px solid var(--color-border); text-align: center;">
+                            <i class="ph-fill ph-check-circle" style="font-size: 3rem; color: #10B981; margin-bottom: 1rem;"></i>
+                            <h4 style="margin-bottom: 0.5rem;">Thank you!</h4>
+                            <p style="color: var(--color-text-muted);">Your quote request has been sent successfully.</p>
+                        </div>
+
+                        <div id="quoteError" class="success-message hidden" style="background: rgba(230, 57, 70, 0.1); padding: 2rem; border-radius: 8px; border: 1px solid var(--color-accent); text-align: center;">
+                            <i class="ph-fill ph-warning-circle" style="font-size: 3rem; color: var(--color-accent); margin-bottom: 1rem;"></i>
+                            <h4 style="margin-bottom: 0.5rem; color: #fff;">Something went wrong.</h4>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1rem;">We couldn't send your request. Please contact me on WhatsApp.</p>
+                            <a href="https://wa.me/918072294717" target="_blank" class="btn btn-outline" style="border-color:#25D366; color:#25D366;"><i class="ph ph-whatsapp-logo"></i> Connect on WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo"><span class="logo-accent">CK</span> CAD FREELANCING SOLUTIONS</a>
+                <p>Precision in Design. Confidence in Delivery.</p>
+            </div>
+            
+            <div class="footer-links-group">
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#services">Services</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="https://www.linkedin.com/in/chandrasekar-kumar-03662214a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="#">Behance</a>
+                    <a href="mailto:chandrunavalarch@gmail.com">Email</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year"></span> CK CAD Freelancing Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close"><i class="ph ph-x"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="Project Preview" id="lightbox-img">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title">Title</h3>
+                <p id="lightbox-desc">Description</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Consultation Booking Modal -->
+    <div id="consultModal" class="lightbox">
+        <div class="modal-content glass-panel">
+            <button class="modal-close" id="closeConsultModal"><i class="ph ph-x"></i></button>
+            
+            <div id="consultFormWrapper">
+                <div class="modal-header">
+                    <h3>Schedule a Free Consultation</h3>
+                    <p>Let's discuss your project requirements and design goals.</p>
+                </div>
+                <!-- To actually send emails, add action="https://formspree.io/f/YOUR_ENDPOINT" method="POST" -->
+                <form id="consultForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" required placeholder="john@company.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Company (Optional)</label>
+                            <input type="text" placeholder="Acme Corp">
+                        </div>
+                        <div class="form-group">
+                            <label>Project Type</label>
+                            <select required>
+                                <option value="" disabled selected>Select...</option>
+                                <option value="product">Product Design</option>
+                                <option value="cad">CAD Modeling</option>
+                                <option value="drone">Drone/UAV Design</option>
+                                <option value="mechanical">Mechanical Design</option>
+                                <option value="rendering">3D Rendering</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Preferred Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Preferred Time</label>
+                            <input type="time" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Project Budget</label>
+                        <select required>
+                            <option value="" disabled selected>Select budget range...</option>
+                            <option value="small">&lt; $1,000</option>
+                            <option value="medium">$1,000 - $5,000</option>
+                            <option value="large">$5,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Project Description</label>
+                        <textarea rows="3" required placeholder="Briefly describe what you're trying to build..."></textarea>
+                    </div>
+                    <div class="form-actions mt-4" style="flex-direction: column;">
+                        <button type="submit" class="btn btn-primary btn-full" id="consultSubmitBtn" style="width: 100%;">Book Consultation</button>
+                        <button type="button" class="btn btn-outline" id="cancelConsultBtn" style="width: 100%; border-color: var(--color-border);">Cancel</button>
+                    </div>
+                    
+                    <div class="premium-options mt-4">
+                        <p class="text-center" style="font-size:0.75rem; color:var(--color-text-muted); margin-bottom:1rem; text-transform:uppercase; letter-spacing:1px;">Or connect instantly via</p>
+                        <div class="form-row" style="gap: 0.5rem;">
+                            <a href="https://wa.me/918072294717?text=Hello,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" class="btn btn-outline" style="width:100%; border-color:#25D366; color:#25D366; padding: 0.5rem;"><i class="ph ph-whatsapp-logo"></i> WhatsApp</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div id="consultSuccess" class="success-message hidden">
+                <i class="ph-fill ph-check-circle"></i>
+                <h4>Thank you!</h4>
+                <p>Your consultation request has been received. I will contact you shortly with a Google Meet link to confirm our meeting.</p>
+                <button class="btn btn-outline mt-4" id="closeSuccessBtn">Close Window</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
