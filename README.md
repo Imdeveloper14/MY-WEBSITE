@@ -1,6 +1,6 @@
-# CK CAD Solutions - Portfolio Website
+# CK Engineering Solutions - Portfolio Website
 
-A high-end, responsive, and modern portfolio website for **CK CAD Solutions**, an independent freelance CAD design consultancy founded by Chandrasekar Kumar. 
+A high-end, responsive, and modern portfolio website for **CK Engineering Solutions**, a freelance engineering design consultancy founded by Chandrasekar Kumar. 
 
 This website is designed with a premium dark theme, bright red accents, and smooth glassmorphic elements inspired by Autodesk, Tesla, and SpaceX. It is built entirely on vanilla web technologies for lightning-fast performance and clean deployment.
 
@@ -33,4 +33,4 @@ The project is configured to deploy instantly on **Cloudflare Pages**:
 - **Build Output Directory:** `/` (Root directory)
 
 ---
-*Created for CK CAD Solutions*
+*Created for CK Engineering Solutions*

@@ -260,4 +260,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     initCounters();
+
+    // 10. Scroll Spy for Active Navigation Highlighting
+    const sections = document.querySelectorAll('section');
+    const navLinksList = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.scrollY >= (sectionTop - 180)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinksList.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
 });

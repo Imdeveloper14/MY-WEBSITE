@@ -20,7 +20,7 @@ Configure the build and deployment settings exactly as follows:
 
 | Setting | Value | Description |
 | :--- | :--- | :--- |
-| **Project Name** | `ck-cad-solutions` (or your preferred name) | This will determine your default subdomain (e.g., `ck-cad-solutions.pages.dev`). |
+| **Project Name** | `ck-engineering-solutions` (or your preferred name) | This will determine your default subdomain (e.g., `ck-engineering-solutions.pages.dev`). |
 | **Production Branch** | `main` | The branch that triggers production deployments. |
 | **Framework Preset** | *None* | Select **None** from the dropdown list. |
 | **Root Directory** | `/` (Leave blank / default) | Indicates that the project is at the root of the repository. |
@@ -36,4 +36,4 @@ Configure the build and deployment settings exactly as follows:
 3. Once completed, you will receive a public `.pages.dev` URL where your rebranded website is live!
 
 ---
-*Created for CK CAD Solutions*
+*Created for CK Engineering Solutions*
