@@ -1,36 +1,36 @@
-# CK Engineering Solutions - Portfolio Website
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A high-end, responsive, and modern portfolio website for **CK Engineering Solutions**, a freelance engineering design consultancy founded by Chandrasekar Kumar. 
+## Getting Started
 
-This website is designed with a premium dark theme, bright red accents, and smooth glassmorphic elements inspired by Autodesk, Tesla, and SpaceX. It is built entirely on vanilla web technologies for lightning-fast performance and clean deployment.
+First, run the development server:
 
-## 🚀 Key Features
-- **3D Wireframe Loader:** A custom, purely CSS-animated rotating wireframe cube with a technical initializing sequence.
-- **Sequential Entrance Animations:** Staggered fade-and-slide transitions that trigger sequentially upon initial viewport load and scroll events.
-- **Fluid & Responsive Typography:** Leverages CSS `clamp()` functions to scale headings and text smoothly from desktop displays down to mobile viewports.
-- **Services Grid Section:** 6 interactive glassmorphic service cards outlining design offerings (3D CAD, Marine, Piping/AutoCAD Plant 3D, Drafting, 3D printing optimization, and Industrial support).
-- **Interactive Masonry Gallery:** A grayscale-to-color masonry grid showcasing portfolio projects, complete with an interactive click-to-preview Lightbox modal.
-- **Scroll Spy Navigation:** Dynamically highlights the current active section in the header menu as the user scrolls.
-- **Quote Request Form & Modal:** Connects directly to Formspree for email submission with a real-time loader spinner, success/error feedback boxes, and a built-in WhatsApp click-to-chat fallback button.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## 🛠️ Technology Stack
-- **Structure:** Semantic HTML5
-- **Style:** Custom Vanilla CSS3 (Custom Variables, Grid/Flexbox, Glassmorphism, Animations)
-- **Logic:** Vanilla JavaScript (Intersection Observer, custom `requestAnimationFrame` animated counters, dynamic modals)
-- **Icons:** Phosphor Icon Pack
-- **Deployment:** Optimized for Cloudflare Pages
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 📦 Project Structure
-- `index.html` — Main website markup and structure.
-- `styles.css` — Custom design system styles, colors, layouts, and responsiveness.
-- `script.js` — All interactive scripts, loaders, counters, modals, and scrolling logic.
-- `images/` — Portfolio renders and project images.
-- `CLOUDFLARE.md` — Cloudflare Pages deployment configuration guide.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## 🌐 Live Deployment
-The project is configured to deploy instantly on **Cloudflare Pages**:
-- **Build Command:** `echo "No build required"`
-- **Build Output Directory:** `/` (Root directory)
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
----
-*Created for CK Engineering Solutions*
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
